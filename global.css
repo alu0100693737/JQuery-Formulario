@@ -1,0 +1,92 @@
+body {
+	background-color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+	margin-top: 1%;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+textarea, input {
+	border: 2px solid #990000;
+	font-size: 20px;
+	resize: none;
+}
+
+div#titulo {
+	font-weight: bold;
+	align-content: center;
+	margin-left: 5%;
+	padding-left: 30%;
+	font-style: italic;
+}
+
+#principal {
+	font-size: 24px;
+}
+
+p#explicacion {
+	padding-left: 8%;
+	font-weight: italic;
+	font-size: 15px;
+}
+
+#infoIcon {
+	max-width: 25px;
+	max-height: 25px;
+}
+#dialogInfo {
+	width: 150px;
+	height: 500px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+div#contenido {
+	background-image: url("css/hierro.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+
+table {
+	padding: 2% 5%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-collapse:separate;
+	border-spacing:0 30px;
+	border: 1px solid #990000;
+}
+
+#slider {
+	min-width: 120px;
+}
+
+#datepicker {
+	z-index: 1;
+}
+
+button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+}
+div#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    margin-top: -55px;
+		font-size: 10px;
+		background-color: rgba(255, 255, 255, 0.7);
+		padding-left: 3%;
+		float: right;
+		margin-right: 20px;
+		padding: 1%;
+}
