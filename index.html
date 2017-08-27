@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<!-- Realizado por: Ivan Garcia-->
@@ -13,55 +13,60 @@
 </head>
 <body>
 <div id=dialogInfo title="Información">
-	HOLAA!
+	Práctica del curso 'Diseño web con Javascript y JQuery'
 </div>
 	<div name="contenido" id="contenido">
-		<br><br>
 		<div id="titulo">	<br>
 			<p id=principal>Formulario, Practica final del curso</p>
 			<p>&nbsp &nbsp &nbsp Desarrollo web con javascript y jquery. </p>
+			<br>
 		</div>
+		<div id="formulario">
 		<p id="explicacion"> Introduzca los siguientes datos y pulse el boton correspondiente. &nbsp <img id="infoIcon" src="css/info.png"></p><br>
-		<table width=80%>
+		<table>
   		<tr>
     		<th align="center" valign="middle">Nombre       </th>
-    		<th align="center" valign="middle"><textarea cols="20" rows="1"></textarea></th>
+    		<th align="center" valign="middle"><textarea cols="20" rows="1" title="Introduzca su Nombre y Apellidos en este campo" id="nombre" class="campo"></textarea></th>
 			</tr>
 			<tr>
 				<th align="center" valign="middle">Edad       </th>
-				<th align="center" valign="middle"> <div id="contenidoSlider">0 años</div></th>
+				<th align="center" valign="middle"> <div id="contenidoSlider" class="campo" title="Desplace el Slider para indicar su edad">0 años</div></th>
 				<th align="center" valign="middle"> <div id="slider"></div> </th>
 			</tr>
 
 			<tr>
 				<th align="center" valign="middle">Fecha       </th>
-				<th align="center" valign="middle"><input type="text" id="datepicker"/> </th>
+				<th align="center" valign="middle"><input type="text" id="datepicker" class="campo" title="Indique su fecha de nacimiento"/> </th>
 			</tr>
 
 			<tr>
 				<th align="center" valign="middle">Ciudad de nacimiento       </th>
-				<th align="center" valign="middle"><textarea cols="20" rows="1" id="autocomplete"></textarea>  </th>
+				<th align="center" valign="middle"><input type="text" id="autocomplete" class="campo" title="Indique su ciudad de nacimiento"></textarea>  </th>
 			</tr>
 			<tr>
 				<th align="center" valign="middle">Telefono       </th>
-				<th align="center" valign="middle"><textarea cols="20" rows="1" ></textarea>  </th>
+				<th align="center" valign="middle"><input type="number" id="telefono" class="campo" title="Indique su telefono de contacto"></textarea>  </th>
 			</tr>
 
 			<tr>
 				<th align="center" valign="middle">Correo electrónico      </th>
-				<th align="center" valign="middle"><textarea cols="20" rows="1"></textarea>  </th>
+				<th align="center" valign="middle"><input type="text" id="correo" class="campo" title="Indique su correo electrónico"></textarea>  </th>
 			</tr>
 		</table>
 		<br>
-		<div align="center" id="submit"> <button type="button"> Click Me! </button></div>
-		<br><br><br><br>
+		<div align="center" id="submit"> <button type="button" id="boton"> Confirmar datos! </button></div>
+		<br>
+	</div>
+
+	<div id="posit">
+		<p>Información Extra</p>
+		<textarea type="text" id="positContenido">Introduzca información extra si lo cree necesario. &#13;&#10;Se enviará cuando confirme los datos.&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10; Este elemento es draggable</textarea>
+	</div>
+		<br><br>
 		<div id="footer"> <p>Posted by: Iván García</p>
 		  <p>Contact information: <a href="#">igarciacampos14@gmail.com</a>.</p>
 		</div>
-
-
-<br><br> <br><br><br>
+		<br>
 </div><!--Contenido-->
-
 </body>
 </html>

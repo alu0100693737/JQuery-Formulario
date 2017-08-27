@@ -27,6 +27,19 @@ function init() {
     yearSuffix: ''
   });
 
+  var ciudades = ["Albacete", "Alicante", "Almería", "Álava", "Asturias", "Ávila",
+                  "Badajoz", "Biskaia", "Burgos", "Cáceres", "Cádiz", "Cantabria",
+                  "Castellón", "Ciudad Real", "Cordoba", "Coruña", "Cuenca", "Guipuzkoa",
+                  "Girona", "Granada", "Guadalajara", "Huelva", "Huesca", "Jaén", "León",
+                  "Lleida", "Lugo", "Madrid", "Málaga", "Murcia", "Navarra", "Ourense",
+                  "Palencia", "Las Palmas", "Pontevedra", "La Rioja", "Salamanca", "Santa Cruz de Tenerife",
+                  "Segovia", "Sevilla", "Soria", "Tarragona", "Teruel", "Toledo", "Valencia",
+                  "Valladolid", "Zamora", "Zaragoza", "Ceuta", "Melilla"];
+
+  $("#autocomplete").autocomplete({source: ciudades});
+
+  $("#boton").button();
+
   $("#infoIcon").click(function () {
     $("#dialogInfo").dialog("open");
   });
@@ -42,4 +55,13 @@ function init() {
       duration: 1000
     }
   });
+
+  $(".campo").tooltip();
+
+  $(".campo").tooltip({
+          tooltipClass: "tooltips",
+  });
+
+  $("#posit").draggable();
+  
 }

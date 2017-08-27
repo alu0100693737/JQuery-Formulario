@@ -4,14 +4,18 @@ body {
   text-align: justify;
   margin-left: 2%;
   margin-right: 2%;
-	margin-top: 1%;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.tooltips {
+	font-size: 10px;
 }
 
 textarea, input {
 	border: 2px solid #990000;
 	font-size: 20px;
 	resize: none;
+	border-radius: 25px;
 }
 
 div#titulo {
@@ -24,10 +28,15 @@ div#titulo {
 
 #principal {
 	font-size: 24px;
+	transition: 1s ease-in-out;
+}
+
+#principal:hover {
+	transform: translate(1.5em,0);
 }
 
 p#explicacion {
-	padding-left: 8%;
+	padding-left: 5%;
 	font-weight: italic;
 	font-size: 15px;
 }
@@ -36,57 +45,77 @@ p#explicacion {
 	max-width: 25px;
 	max-height: 25px;
 }
+
 #dialogInfo {
 	width: 150px;
 	height: 500px;
-	background-color: black;
-	color: white;
 	font-weight: bold;
+	font-size: 10px;
 }
 
 div#contenido {
 	background-image: url("css/hierro.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100%;
 }
 
 table {
-	padding: 2% 5%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: rgba(255, 255, 255, 0.2);
+	margin-left: 2%;
 	border-collapse:separate;
-	border-spacing:0 30px;
-	border: 1px solid #990000;
+	border-spacing: 10px 20px;
+}
+
+#formulario {
+		background-color: rgba(255, 255, 255, 0.2);
+		margin-left: 5%;
+		margin-right: 45%;
+		border: 1px solid #990000;
+		border-radius: 25px;
 }
 
 #slider {
-	min-width: 120px;
+	min-width: 160px;
 }
 
-#datepicker {
-	z-index: 1;
-}
-
-button {
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-		margin-left: auto;
-		margin-right: auto;
-}
 div#footer {
     clear: both;
     position: relative;
     z-index: 10;
-    margin-top: -55px;
+    margin-top: -70px;
 		font-size: 10px;
 		background-color: rgba(255, 255, 255, 0.7);
-		padding-left: 3%;
 		float: right;
 		margin-right: 20px;
-		padding: 1%;
+		padding: 0% 1%;
+		transition: 1s ease-in-out;
+}
+
+div#posit {
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+	border-bottom-left-radius: 30px;
+	background-color: #FFFFA5;
+	transform: rotate(6deg);
+	border: 1px solid black
+	resize: none;
+	padding: 2%;
+	font-size: 20px;
+	letter-spacing: -1px;
+	position: absolute;
+	box-shadow: -7px -5px 5px 0px rgba(0,0,0,0.75);
+	left: 65%;
+	top: 30%;
+}
+
+#positContenido {
+	width: 300px;
+	height: 240px;
+	padding-left: 4px;
+	background-color: #FFFFA5;
+	resize: none;
+	font-size: 15px;
+	letter-spacing: -1px;
+	border: none;
+	border-radius: 0px;
 }
